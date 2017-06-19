@@ -12,6 +12,7 @@ import butterknife.OnClick;
 import citypass.jiyun.com.citypass.R;
 import citypass.jiyun.com.citypass.control.base.BaseActivity;
 import citypass.jiyun.com.citypass.control.bbs.BbsFragment;
+import citypass.jiyun.com.citypass.control.fragment.head.HeadLineFragment;
 import citypass.jiyun.com.citypass.control.tools.FragmentUtils;
 
 public class HomeActivity extends BaseActivity {
@@ -40,7 +41,7 @@ public class HomeActivity extends BaseActivity {
 
     @Override
     public void initData() {
-        FragmentUtils.addFragment(getSupportFragmentManager(), new BbsFragment(), R.id.home_framelayout);
+        FragmentUtils.addFragment(getSupportFragmentManager(), new HeadLineFragment(), R.id.home_framelayout);
     }
 
     @Override
