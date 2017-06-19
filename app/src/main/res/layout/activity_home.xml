@@ -10,8 +10,7 @@
         android:id="@+id/home_framelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/home_radiogroup"
-        >
+        android:layout_above="@+id/home_radiogroup">
 
     </FrameLayout>
 
@@ -19,20 +18,21 @@
         android:id="@+id/home_radiogroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:weightSum="5"
-        >
+        android:orientation="horizontal"
+        android:weightSum="5">
+
         <RadioButton
+            android:checked="true"
             android:id="@+id/home_headbut"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:button="@null"
             android:drawableTop="@drawable/main_btn_head"
-            android:text="@string/homehead"
             android:gravity="center"
-            />
+            android:text="@string/homehead" />
+
         <RadioButton
             android:id="@+id/home_naobut"
             android:layout_width="0dp"
@@ -40,9 +40,9 @@
             android:layout_weight="1"
             android:button="@null"
             android:drawableTop="@drawable/main_btn_naonao"
-            android:text="@string/homenaonao"
             android:gravity="center"
-            />
+            android:text="@string/homenaonao" />
+
         <RadioButton
             android:id="@+id/home_locationbut"
             android:layout_width="0dp"
@@ -50,9 +50,9 @@
             android:layout_weight="1"
             android:button="@null"
             android:drawableTop="@drawable/main_btn_location"
-            android:text="@string/homeshequ"
             android:gravity="center"
-            />
+            android:text="@string/homeshequ" />
+
         <RadioButton
             android:id="@+id/home_lifebut"
             android:layout_width="0dp"
@@ -60,9 +60,9 @@
             android:layout_weight="1"
             android:button="@null"
             android:drawableTop="@drawable/main_btn_life"
-            android:text="@string/homelife"
             android:gravity="center"
-            />
+            android:text="@string/homelife" />
+
         <RadioButton
             android:id="@+id/home_findbut"
             android:layout_width="0dp"
@@ -70,9 +70,8 @@
             android:layout_weight="1"
             android:button="@null"
             android:drawableTop="@drawable/main_btn_find"
-            android:text="@string/homefind"
             android:gravity="center"
-            />
+            android:text="@string/homefind" />
     </RadioGroup>
 
 </RelativeLayout>

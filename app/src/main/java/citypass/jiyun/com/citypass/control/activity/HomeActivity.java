@@ -1,16 +1,17 @@
 package citypass.jiyun.com.citypass.control.activity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 
 import butterknife.Bind;
+import butterknife.OnClick;
 import citypass.jiyun.com.citypass.R;
 import citypass.jiyun.com.citypass.control.base.BaseActivity;
 import citypass.jiyun.com.citypass.control.bbs.BbsFragment;
-import citypass.jiyun.com.citypass.control.fragment.head.HeadFragment;
 import citypass.jiyun.com.citypass.control.tools.FragmentUtils;
 
 public class HomeActivity extends BaseActivity {
@@ -44,7 +45,7 @@ public class HomeActivity extends BaseActivity {
 
     @Override
     public void loadData() {
-//        homeHeadbut.setChecked(true);
+
     }
 
     @Override
@@ -59,4 +60,25 @@ public class HomeActivity extends BaseActivity {
     }
 
 
+    @OnClick({R.id.home_headbut, R.id.home_naobut, R.id.home_locationbut, R.id.home_lifebut, R.id.home_findbut})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.home_headbut:
+
+                break;
+            case R.id.home_naobut:
+
+                break;
+            case R.id.home_locationbut:
+
+                break;
+            case R.id.home_lifebut:
+
+                break;
+            case R.id.home_findbut:
+
+
+                break;
+        }
+    }
 }
