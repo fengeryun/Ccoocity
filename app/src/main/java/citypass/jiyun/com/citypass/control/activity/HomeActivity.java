@@ -111,6 +111,7 @@ public class HomeActivity extends BaseActivity {
             }
 
         }else {
+
             message.popBackStackImmediate();   //立即弹栈
             String lastname = message.getBackStackEntryAt(message.getBackStackEntryCount()-1).getName();
             Log.e("--------------lastname",lastname);
