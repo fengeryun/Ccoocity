@@ -37,7 +37,7 @@ public class FragmentBuilder {
         return instance;
     }
 
-    public FragmentBuilder start(int fragLayout , Class<? extends BaseFragment> fragmentClass){
+    public FragmentBuilder start(int fragLayout , Class<? extends BaseFragment> fragmentClass,boolean isback){
         trans = manager.beginTransaction();
         fragname = fragmentClass.getSimpleName();
         fragment = (BaseFragment) manager.findFragmentByTag(fragname);
@@ -58,7 +58,9 @@ public class FragmentBuilder {
             trans.hide(lastFragment);
         }
         trans.show(fragment);
-        trans.addToBackStack(fragname);
+        if(isback){
+            trans.addToBackStack(fragname);
+        }
         lastFragment = fragment;
         trans.commit();
         return this;
