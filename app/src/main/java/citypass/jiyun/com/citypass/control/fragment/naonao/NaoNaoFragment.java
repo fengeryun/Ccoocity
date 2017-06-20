@@ -63,8 +63,13 @@ public class NaoNaoFragment extends BaseFragment {
         list.add(new NaoNaoListview());
         list.add(new NaoNaoListview());
         list.add(new NaoNaoListview());
+        list.add(new NaoNaoListview());
+        list.add(new NaoNaoListview());
+        list.add(new NaoNaoListview());
+        list.add(new NaoNaoListview());
         adapter = new TabLayoutAdapter(getChildFragmentManager(),list);
         naoPag.setAdapter(adapter);
+        naoPag.setCurrentItem(3);
 
     }
 
