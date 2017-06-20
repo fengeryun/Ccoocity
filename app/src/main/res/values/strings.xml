@@ -6,4 +6,7 @@
     <string name="homeshequ">社区</string>
     <string name="homelife">生活</string>
     <string name="homefind">发现</string>
+    <string name="smvideo">小视频</string>
+    <string name="selectphoto">从手机相册选择</string>
+    <string name="quxiao">取消</string>
 </resources>

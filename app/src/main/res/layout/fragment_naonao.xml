@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <RelativeLayout
-        android:id="@+id/home_headlayout"
+        android:id="@+id/nao_headlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/red"
         >
         <ImageView
-            android:id="@+id/headImg"
+            android:id="@+id/nao_headImg"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:padding="2dp"
@@ -20,7 +21,7 @@
             />
 
         <ImageView
-            android:id="@+id/headMore"
+            android:id="@+id/mao_photo"
             android:layout_width="30dp"
             android:layout_height="26dp"
             android:src="@mipmap/mall_camera0"
@@ -29,7 +30,7 @@
             />
 
         <TextView
-            android:id="@+id/headTitle"
+            android:id="@+id/nao_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -37,5 +38,24 @@
             android:textSize="22sp"
             android:layout_centerInParent="true"/>
     </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nao_tab"
+        app:tabIndicatorColor="@color/red"
+        app:tabSelectedTextColor="@color/red"
+        >
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/nao_pag"
+        >
+
+    </android.support.v4.view.ViewPager>
 
 </LinearLayout>

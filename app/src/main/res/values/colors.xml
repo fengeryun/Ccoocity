@@ -5,6 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="color_999">#999999</color>
 
+    <color name="xu">#44000000</color><!--黑色 -->
     <color name="black">#000000</color><!--黑色 -->
     <color name="white">#FFFFFF</color><!--白色-->
     <color name="snow">#fffafa</color><!--雪白色 -->

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xu"
+    android:id="@+id/popu_layout"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@color/lightgrey"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/popu_video"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="小视频"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:id="@+id/popu_photo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="从手机相册选择"
+            android:layout_marginTop="1dp"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:id="@+id/popu_quxiao"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="取消"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

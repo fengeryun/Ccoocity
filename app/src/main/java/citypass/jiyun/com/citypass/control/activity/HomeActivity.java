@@ -50,7 +50,7 @@ public class HomeActivity extends BaseActivity {
 
     @Override
     public void initData() {
-        FragmentBuilder.getInstance().start(R.id.home_framelayout, HeadLineFragment.class,false);
+        FragmentBuilder.getInstance().start(R.id.home_framelayout, HeadLineFragment.class,true);
     }
 
     @Override
@@ -75,10 +75,10 @@ public class HomeActivity extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.home_headbut:
-                FragmentBuilder.getInstance().start(R.id.home_framelayout,HeadLineFragment.class,false);
+                FragmentBuilder.getInstance().start(R.id.home_framelayout,HeadLineFragment.class,true);
                 break;
             case R.id.home_naobut:
-                FragmentBuilder.getInstance().start(R.id.home_framelayout,NaoNaoFragment.class,false);
+                FragmentBuilder.getInstance().start(R.id.home_framelayout,NaoNaoFragment.class,true);
                 break;
             case R.id.home_locationbut:
                 break;
