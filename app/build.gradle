@@ -32,5 +32,6 @@ dependencies {
     compile 'in.srain.cube:ptr-load-more:1.0.6'
     compile files('libs/gson-2.2.4.jar')
     compile files('libs/volley.jar')
+    compile files('libs/nineoldandroids-2.4.0.jar')
     compile 'com.android.support:recyclerview-v7:25.3.1'
 }

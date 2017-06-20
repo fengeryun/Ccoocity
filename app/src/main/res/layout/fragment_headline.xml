@@ -2,20 +2,40 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <include
-        android:id="@+id/head_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/head_titlebar"
-        />
-    <RelativeLayout
-        android:layout_below="@id/head_title"
+
+    <citypass.jiyun.com.citypass.control.sideslip.view.DragLayout
+        android:id="@+id/dl"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <include
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            layout="@layout/head_content"
-            />
-    </RelativeLayout>
+            android:layout_height="match_parent">
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/sideslip_main"
+                />
+        </RelativeLayout>
+        <citypass.jiyun.com.citypass.control.sideslip.view.MyRelativeLayout
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/head_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/head_titlebar"
+                />
+            <RelativeLayout
+                android:layout_below="@id/head_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/head_content"
+                    />
+            </RelativeLayout>
+        </citypass.jiyun.com.citypass.control.sideslip.view.MyRelativeLayout>
+    </citypass.jiyun.com.citypass.control.sideslip.view.DragLayout>
 </RelativeLayout>
