@@ -17,6 +17,7 @@ import citypass.jiyun.com.citypass.control.sideslip.view.DragLayout;
  */
 
 public class HeadLineFragment extends BaseFragment {
+
     ListView listView;
     ScrollView scrollView;
     DragLayout dl;
