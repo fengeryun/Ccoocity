@@ -50,6 +50,7 @@ public class FragmentUtils {
     public static Fragment addFragment(@NonNull FragmentManager fragmentManager,
                                        @NonNull Fragment fragment,
                                        int containerId) {
+
         return addFragment(fragmentManager, fragment, containerId, false);
     }
 

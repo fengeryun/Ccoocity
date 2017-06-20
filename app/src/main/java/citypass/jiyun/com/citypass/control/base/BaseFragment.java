@@ -3,10 +3,13 @@ package citypass.jiyun.com.citypass.control.base;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import citypass.jiyun.com.citypass.App;
+import citypass.jiyun.com.citypass.R;
 import citypass.jiyun.com.citypass.model.callback.RunTimeError;
 
 /**
@@ -34,6 +37,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        view.setBackground(ContextCompat.getDrawable(App.activity, R.color.whitesmoke)); //有用别动
         isFirst=true;
         initView(view);
         initData();
