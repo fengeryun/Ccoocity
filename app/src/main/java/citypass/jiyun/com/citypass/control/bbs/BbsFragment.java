@@ -19,30 +19,14 @@ import citypass.jiyun.com.citypass.control.bbs.base.CommonAdapter;
 import citypass.jiyun.com.citypass.control.bbs.base.MRecyclerView;
 import citypass.jiyun.com.citypass.control.bbs.base.ViewHolder;
 
-import static android.support.v7.widget.LinearLayoutManager.*;
 
 /**
  * Created by Daddy on 2017/6/19.
  */
 
 public class BbsFragment extends BaseFragment {
-    @Bind(R.id.bbs)
-    RecyclerView bbs;
-    private List<String> list;
     @Override
     public void initView(final View view) {
-        bbs.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayout.VERTICAL, false));
-        list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            list.add(""+i);
-        }
-
-        bbs.setAdapter(new CommonAdapter<String>(getContext(),R.layout.item_bbs_pcw,list) {
-            @Override
-            protected void convert(ViewHolder viewHolder, String item, int position) {
-                viewHolder.setText(R.id.item_pcw_tv,item);
-            }
-        });
     }
 
     @Override
