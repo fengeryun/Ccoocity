@@ -13,6 +13,7 @@ public class NaoNaoFragment extends BaseFragment{
     @Override
     public void initView(View view) {
 
+
     }
 
     @Override
